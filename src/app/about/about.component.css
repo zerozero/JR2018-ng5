@@ -1,0 +1,10 @@
+.portrait{
+  background: url("../../assets/images/portrait@1,0x.png") no-repeat;
+  min-height: 20vw;
+  min-width: 20vh;
+  background-size: contain;
+}
+
+h1 {
+  font-weight: 100;
+}

@@ -1,0 +1,12 @@
+.home-container{
+
+}
+
+
+.feature-image{
+  height: 100vh;
+  background-color: black;
+  background: url("../../assets/images/feature-image@1,0x.jpg") no-repeat;
+  background-size: contain;
+  background-position: center;
+}
