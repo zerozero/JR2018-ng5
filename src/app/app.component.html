@@ -2,10 +2,14 @@
 
   <mat-sidenav #sidenav mode="push" class="sidenav-menu">
     <!-- sidenav content -->
-    <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap.lt-md="0px" fxLayoutGap="12px" class="menu-layout-container">
+    <div fxLayout="column" fxLayoutAlign="start end" fxLayoutGap.lt-md="20px" fxLayoutGap="42px" class="menu-layout-container">
 
-      <button fxFlex="0 1 auto" mat-button (click)="navigateToRoute('home'); sidenav.close()">HOME</button>
-      <button fxFlex="0 1 auto" mat-button (click)="navigateToRoute('contact'); sidenav.close()">CONTACT</button>
+      <span class="menu-vertical-spacer"></span>
+      <button class="light" fxFlex="0 1 auto" mat-button (click)="navigateToRoute('home'); sidenav.close()">Home</button>
+      <button class="light" fxFlex="0 1 auto" mat-button (click)="navigateToRoute('about'); sidenav.close()">About</button>
+      <button class="light" fxFlex="0 1 auto" mat-button (click)="navigateToRoute('work'); sidenav.close()">Work</button>
+      <button class="light" fxFlex="0 1 auto" mat-button (click)="navigateToRoute('blog'); sidenav.close()">Blog</button>
+      <button class="light" fxFlex="0 1 auto" mat-button (click)="navigateToRoute('contact'); sidenav.close()">Contact</button>
     </div>
   </mat-sidenav>
 
@@ -13,23 +17,38 @@
 
 </mat-sidenav-container>
 
+<div class="toolbar-vertical-spacer"></div>
+
 <mat-toolbar>
 
-  <div fxLayout="row" fxLayoutAlign="center center" class="toolbar-container">
+  <div fxLayout="row" fxLayoutAlign="center center" fxLayoutAlign.lt-md="start center" class="toolbar-container">
 
-    <div fxFlex="200px"></div>
+    <button fxFlex="0 1 auto"
+            mat-icon-button
+            fxHide="true"
+            fxHide.lt-md="false"
+            (click)="sidenav.open()"
+            class="body-font">
+      <i class="material-icons hamburger">menu</i>
+    </button>
+
+    <div fxFlex="20px" fxShow.lt-md="true" fxShow="false"></div>
+    <div fxFlex="200px" fxShow.lt-md="false" fxShow="true"></div>
 
     <div fxFlex="0 0 auto">
-      <div fxLayout="row" fxLayout.lt-lg="column" fxLayoutAlign="start baseline">
-        <h1 fxFlex class="regular">Jon Rowe</h1>
-        <div fxFlex="20px" fxFlex.lt-lg="0px"></div>
-        <h4 fxFlex class="light-italic">Pioneering Synthetic Realities</h4>
+      <div fxLayout="column" class="logo-container">
+        <div fxFlex="16px"></div>
+        <div fxLayout="row" fxLayout.lt-lg="column" fxLayoutAlign="start baseline">
+          <h1 fxFlex class="regular">Jon Rowe</h1>
+          <div fxFlex="20px" fxFlex.lt-lg="0px"></div>
+          <h4 fxFlex class="light-italic">Pioneering Synthetic Realities</h4>
+        </div>
       </div>
     </div>
 
-    <div fxFlex="1 1 auto"></div>
+    <div fxFlex="16px" fxShow.lt-md="false" fxShow="true"></div>
 
-    <div fxFlex="0 0 auto">
+    <div fxFlex="0 0 auto" fxShow.lt-md="false" fxShow="true">
       <nav mat-tab-nav-bar>
         <a mat-tab-link
            *ngFor="let link of navLinks"
@@ -41,7 +60,7 @@
       </nav>
     </div>
 
-    <div fxFlex="200px"></div>
+    <div fxFlex="200px" fxShow.lt-md="false" fxShow="true"></div>
 
   </div>
 </mat-toolbar>

@@ -8,11 +8,34 @@ mat-sidenav-container {
   /*z-index: -1;*/
 }
 
+.sidenav-menu{
+  background-color: whitesmoke !important;
+}
+
 mat-toolbar {
   position: absolute;
   left: 0;
-  top:0;
+  top:16px;
   z-index: 1;
+  /*border:1px dotted red;*/
+}
+
+.toolbar-vertical-spacer{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 16px;
+  background-color: whitesmoke;
+  z-index: 2;
+}
+
+/*div{*/
+  /*border:1px dotted;*/
+/*}*/
+
+.logo-container{
+  min-height: 75px;
 }
 
 .menu-layout-container{
@@ -22,6 +45,8 @@ mat-toolbar {
 
 .toolbar-container {
   width: 100vw;
+  /*max-width: 960px;*/
+  overflow: hidden;
 }
 
 mat-ink-bar{
@@ -40,21 +65,40 @@ a:focus, a:hover{
 }
 
 a{
-  font-size: 26px !important;
+  font-size: 18px !important;
   font-weight: 300 !important;
   height: 78px !important;
+  min-width: 110px !important;
 }
 
 .mat-toolbar-single-row{
   height: 80px !important;
 }
 
+.mat-button{
+  font-size: 26px !important;
+}
+
 .regular{
-  font-size: 30pt !important;
+  font-size: 26pt !important;
 }
 
 .light-italic{
   /*font-family: "nimbus-sans",sans-serif;*/
   font-style: italic !important;
   font-weight: 300 !important;
+}
+
+
+.light{
+  font-weight: 300 !important;
+}
+
+.hamburger{
+  font-size: 48px;
+}
+
+
+.menu-vertical-spacer{
+  flex: 0 0 10px;
 }
