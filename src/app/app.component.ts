@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
 import {Router} from '@angular/router';
 import {ViewEncapsulation} from '@angular/core';
+import {fadeAnimation} from './_animations/fade.animation';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
+  animations: [fadeAnimation],
   encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
@@ -24,5 +26,9 @@ export class AppComponent {
 
   navigateToRoute(route: string) {
     this.router.navigateByUrl(route);
+  }
+
+  public getRouterOutletState(outlet) {
+    return outlet.isActivated ? outlet.activatedRouteData['animation'] : '';
   }
 }

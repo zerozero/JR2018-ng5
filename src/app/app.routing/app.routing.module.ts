@@ -9,12 +9,12 @@ import {BlogComponent} from '../blog/blog.component';
 
 const APP_ROUTES: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
-  { path: 'home', component: HomeComponent },
-  { path: 'about', component: AboutComponent },
-  { path: 'work', component: WorkComponent },
-  { path: 'blog', component: BlogComponent },
-  { path: 'contact', component: ContactComponent },
-  { path: '**', component: PageNotFoundComponent }
+  { path: 'home', component: HomeComponent, data: { animation: 'home' } },
+  { path: 'about', component: AboutComponent, data: { animation: 'about' } },
+  { path: 'work', component: WorkComponent, data: { animation: 'work' } },
+  { path: 'blog', component: BlogComponent, data: { animation: 'blog' } },
+  { path: 'contact', component: ContactComponent, data: { animation: 'contact' } },
+  { path: '**', component: PageNotFoundComponent, data: { animation: '**' } }
 ];
 
 export const APP_ROUTING  = RouterModule.forRoot((APP_ROUTES), { enableTracing: false });
