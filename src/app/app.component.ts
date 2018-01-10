@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import {Router} from '@angular/router';
 import {ViewEncapsulation} from '@angular/core';
-import {fadeAnimation} from './_animations/fade.animation';
+import {fadeAnimation} from './_animations/index';
 
 @Component({
   selector: 'app-root',
