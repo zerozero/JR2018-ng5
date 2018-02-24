@@ -1,3 +1,19 @@
-<div class="square">
-  <p>{{project.description}}</p>
+<div class="square" fxLayout="column" fxLayoutAlign="start start">
+  <h4 fxFlex class="underline"
+      [ngStyle.xs]="{'font-size.em': 0.8}"
+      [ngStyle.sm]="{'font-size.em': 1.1}"
+      [ngStyle.md]="{'font-size.em': 1.8}">{{project.name}} ({{project.date}})</h4>
+
+  <h4 fxFlex
+      [ngStyle.xs]="{'font-size.em': 0.8}"
+      [ngStyle.sm]="{'font-size.em': 1.1}"
+      [ngStyle.md]="{'font-size.em': 1.8}"> Produced for <span class="dark">{{project.endClient}}</span> <br/>at <span class="dark">{{project.client}}</span></h4>
+  <h4 fxFlex
+      [ngStyle.xs]="{'font-size.em': 0.8}"
+      [ngStyle.sm]="{'font-size.em': 1.1}"
+      [ngStyle.md]="{'font-size.em': 1.8}">{{project.description}} ({{project.platform}})</h4>
+  <h4 fxFlex
+      [ngStyle.xs]="{'font-size.em': 0.8}"
+      [ngStyle.sm]="{'font-size.em': 1.1}"
+      [ngStyle.md]="{'font-size.em': 1.8}">{{project.role}}</h4>
 </div>

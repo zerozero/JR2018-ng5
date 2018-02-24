@@ -2,8 +2,59 @@
   background-color: #c51162;
   height: 320px;
   width: 320px;
+  padding: 16px;
 }
+
 
 :host{
   max-width: 320px;
+  max-height: 320px;
 }
+
+@media (max-width: 640px) {
+  :host{
+    max-width: 240px;
+    max-height: 240px;
+  }
+
+  .square{
+    height: 240px;
+    width: 240px;
+    padding: 12px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  :host{
+    max-width: 140px;
+    max-height: 140px;
+  }
+
+  .square{
+    height: 140px;
+    width: 140px;
+    padding: 4px;
+  }
+
+  h4{
+    margin: 1px;
+  }
+}
+
+.underline{
+  text-decoration: underline;
+}
+
+.dark{
+  color: #400519;
+}
+
+h4{
+  color: #ffffff;
+  font-size: 1.6em;
+  font-family: "nimbus-sans","sans-serif";
+  margin: 6px;
+}
+
+

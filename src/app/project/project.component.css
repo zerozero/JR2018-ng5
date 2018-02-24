@@ -9,19 +9,16 @@
 }
 
 .square-image{
-  /*max-width: 320px;*/
+  max-height: 320px;
   object-fit: contain;
 }
 
-.square{
-  height: 320px;
-  width: 320px;
-  object-fit: contain;
+.img-area{
+  max-width: 320px;
 }
-
 .chip{
-  height: 16px;
-  width: 16px;
+  height: 32px;
+  width: 32px;
   background-color: #c51162;
   cursor: pointer;
 }
@@ -32,4 +29,38 @@
 
 .alpha05{
   opacity: 0.5;
+}
+
+.content-area{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+@media (max-width: 640px) {
+  .square-image {
+    max-height: 240px;
+  }
+}
+
+@media (max-width: 480px) {
+  .square-image {
+    max-height: 140px;
+  }
+}
+
+@media (min-width: 1025px)  {
+
+  .chip{
+    height: 16px;
+    width: 16px;
+  }
+
+  .square{
+    height: 320px;
+    width: 320px;
+    object-fit: contain;
+  }
+
 }

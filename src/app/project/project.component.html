@@ -2,18 +2,20 @@
 
   <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="center center" class="app-container project-container">
 
-    <div *ngIf="project$ | async as project" fxFlex.lt-sm="100vw" fxFlex="65vw" fxFlex.gt-md="50vw"  fxFlexAlign="center center">
-      <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around center">
-        <img src="{{project.imageUrl}}" class="square-image">
-        <div fxFlex="320px" fxLayout="row" fxLayoutAlign="center center" class="square">
-          <app-project-detail [project]="project" fxFlex></app-project-detail>
+    <div class="content-area" *ngIf="project$ | async as project" fxFlex  fxFlexAlign="center center">
+      <div class="" fxFlex="100vw" fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign.lt-sm="start center" fxLayoutAlign="center center">
+        <div fxFlex="0 1 auto" class="img-area" fxFlexOffset.lt-sm="120px">
+          <img  src="{{project.imageUrl}}" class="square-image">
         </div>
+
+        <app-project-detail class="project-detail" [project]="project" fxFlex="1 0 auto"></app-project-detail>
+
       </div>
     </div>
 
   </div>
 
-  <div fxFlex="100px" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="16px">
+  <div fxFlex="100px" fxLayout="row" fxLayoutAlign="center start" fxLayoutGap="16px">
     <div fxFlex class="chip" [ngClass]="selectedId == project.id ? 'alpha1' : 'alpha05'" (click)="onClick(project.id)" *ngFor="let project of projectList | async"></div>
   </div>
 

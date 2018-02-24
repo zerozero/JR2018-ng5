@@ -34,6 +34,7 @@ export class ProjectComponent implements OnInit {
 
   public onClick(id: number) {
     this.selectedId = id;
+    this.router.navigate(['/project/' + id]);
   }
 
 }

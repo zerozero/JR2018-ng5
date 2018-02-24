@@ -37,7 +37,7 @@ const PROJECTS = [
   new Project(
     1,
     'AT&T FirstNet VR',
-    '2017/18',
+    '2018',
     'George P Johnson',
     'AT&T',
     'Experiential introduction to services for First Responders',
@@ -70,12 +70,47 @@ const PROJECTS = [
   new Project(
     4,
     'Darzalex VR',
-    '2016/17',
+    '2016',
     'Masters of Pie',
     'Janssen Pharmaceuticals',
-    'Training Simulation for Healthcare professionals',
+    'Healthcare Training Simulation',
     'Rift',
     'Lead Developer',
+    '../assets/images/attfirstnet-optimize.gif'
+  ),
+  new Project(
+    5,
+    'Coolroom 3D',
+    '2003',
+    'Ether Interactive',
+    'BT/Universal Pictures',
+    'Virtual Home and Media Centre',
+    'Web',
+    'Lead Developer',
+    '../assets/images/attfirstnet-optimize.gif'
+  )
+  ,
+  new Project(
+    6,
+    'The Icarus Project',
+    '1994',
+    'Duncan of Jordanstone College',
+    'Post-Graduate Diploma in Electronic Imaging',
+    '',
+    'Prototype HMD',
+    'Project Lead',
+    '../assets/images/attfirstnet-optimize.gif'
+  )
+  ,
+  new Project(
+    7,
+    'Project Archive',
+    '1994-2018',
+    'Various',
+    'Everywhere',
+    '',
+    '',
+    '',
     '../assets/images/attfirstnet-optimize.gif'
   )
 
