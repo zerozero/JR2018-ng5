@@ -11,9 +11,12 @@ import {APP_ROUTING} from './app.routing/app.routing.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import {FlexLayoutModule} from '@angular/flex-layout';
-import { WorkComponent } from './work/work.component';
 import { AboutComponent } from './about/about.component';
 import { BlogComponent } from './blog/blog.component';
+import { ProjectComponent } from './project/project.component';
+import { ProjectDetailComponent } from './project/project-detail/project-detail.component';
+import {ProjectRoutingModule} from './project/project-routing.module';
+import {ProjectService} from './project/ProjectService';
 
 @NgModule({
   declarations: [
@@ -21,9 +24,10 @@ import { BlogComponent } from './blog/blog.component';
     HomeComponent,
     ContactComponent,
     PageNotFoundComponent,
-    WorkComponent,
     AboutComponent,
-    BlogComponent
+    BlogComponent,
+    ProjectComponent,
+    ProjectDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -33,9 +37,10 @@ import { BlogComponent } from './blog/blog.component';
     MatTabsModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
+    ProjectRoutingModule,
     APP_ROUTING
   ],
-  providers: [],
+  providers: [ ProjectService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

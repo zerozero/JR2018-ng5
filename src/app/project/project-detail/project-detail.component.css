@@ -1,0 +1,9 @@
+.square{
+  background-color: #c51162;
+  height: 320px;
+  width: 320px;
+}
+
+:host{
+  max-width: 320px;
+}

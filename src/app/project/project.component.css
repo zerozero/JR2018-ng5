@@ -1,0 +1,35 @@
+.project-container{
+
+}
+
+:host {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.square-image{
+  /*max-width: 320px;*/
+  object-fit: contain;
+}
+
+.square{
+  height: 320px;
+  width: 320px;
+  object-fit: contain;
+}
+
+.chip{
+  height: 16px;
+  width: 16px;
+  background-color: #c51162;
+  cursor: pointer;
+}
+
+.alpha1{
+  opacity: 1;
+}
+
+.alpha05{
+  opacity: 0.5;
+}

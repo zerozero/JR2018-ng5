@@ -2,6 +2,18 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.3.
 
+
+##Notes
+
+**Remote debugging** 
+
+port 4200 has been opened with Murus
+Attach the device with thunderbolt cable
+Navigate to 192.168.1.173
+modify npm start in package.json to:
+"ng serve --host 0.0.0.0 --no-sourcemap"
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
