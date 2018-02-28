@@ -1,11 +1,25 @@
-<div fxLayout="row" fxLayoutAlign="center center" class="app-container about-container">
-  <div fxFlex.lt-sm="90vw" fxFlex="65vw" fxFlex.gt-md="50vw" fxFlexAlign="center center">
-    <div fxLayout="row" fxLayoutAlign="start start" fxLayoutGap="64px">
-      <div class="portrait"></div>
-      <div fxLayout="column" fxLayoutAlign="center center">
-        <h1>I’ve been exploring immersive environments since the late 1980s.</h1>
-        <h1>Now the technology is sufficiently advanced, let’s make the magic happen.</h1>
+<div fxLayout="column" fxLayoutAlign="center center" class="app-container about-container">
+    <!--<div fxFlex="100px"></div>-->
+    <div fxFlex fxLayout="row" fxLayoutAlign="center center">
+      <div fxFlex.lt-sm="90vw" fxFlex="50vw" fxFlex.gt-md="50vw" fxFlexAlign="center center">
+        <div fxFlex="0 0 auto">
+          <img src="../../assets/images/portrait@1,0x.png" class="portrait">
+        </div>
+        <div fxFlex="16px" fxFlex.gt-xs="64px"></div>
+        <div fxFlex fxLayout="column" fxLayoutAlign="center center">
+          <h1 [ngStyle.xs]="{'font-size.em': 1.5}"
+              [ngStyle.sm]="{'font-size.em': 2}"
+              [ngStyle.md]="{'font-size.em': 2.5}">I’ve been exploring immersive environments since the late 1980s.</h1>
+          <h1 [ngStyle.xs]="{'font-size.em': 1.5}"
+              [ngStyle.sm]="{'font-size.em': 2}"
+              [ngStyle.md]="{'font-size.em': 2.5}">Now the technology is sufficiently advanced, let’s make the magic happen.</h1>
+        </div>
       </div>
-    </div>
+
   </div>
 </div>
+<!--<div fxLayout="row" fxLayoutAlign="center center" class="app-container home-container">-->
+  <!--<div fxFlex.lt-sm="100vw" fxFlex="65vw" fxFlex.gt-md="50vw" fxFlexAlign="center center">-->
+    <!--<div class="about-image"></div>-->
+  <!--</div>-->
+<!--</div>-->
