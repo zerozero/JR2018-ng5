@@ -5,6 +5,12 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ##Notes
 
+**Deploy to Heroku**
+
+[see this](https://medium.com/@hellotunmbi/how-to-deploy-angular-application-to-heroku-1d56e09c5147)
+
+toggle the start script in package.json for local/remote deploy
+
 **Remote debugging** 
 
 port 4200 has been opened with Murus
