@@ -5,6 +5,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ##Notes
 
+remember to set the active system node version with n
+$ n 8.9.3
+
 **Deploy to Heroku**
 
 [see this](https://medium.com/@hellotunmbi/how-to-deploy-angular-application-to-heroku-1d56e09c5147)
